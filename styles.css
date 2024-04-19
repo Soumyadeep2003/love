@@ -1,0 +1,56 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    width: 90%; /* Make content width responsive */
+    max-width: 600px; /* Maximum width */
+    padding: 10px;
+    border-radius: 15px;
+    background: #fff3f3;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden; /* Ensures nothing spills out */
+}
+
+h1 {
+    color: #e63946;
+    font-size: calc(16px + 2vw); /* Responsive font size */
+    padding: 0 5px; /* Padding for small screens */
+}
+
+.highlight {
+    color: #f4a261;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.cutuu {
+    color: #9b5de5;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+#hearts {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: calc(14px + 4vw); /* Larger scale for very small screens */
+    }
+}
